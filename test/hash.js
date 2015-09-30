@@ -14,3 +14,10 @@ describe('unhash', function() {
     expect(unhash(680131659347)).to.equal('leepadg');
   });
 });
+
+describe('both ways', function() {
+  it('should hash and unhash to the same value.', function() {
+    var value = 'l';
+    expect(unhash(hash('l'))).to.equal(value);
+  })
+});
