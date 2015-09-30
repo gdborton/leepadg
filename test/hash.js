@@ -1,7 +1,8 @@
 var chai = require('chai');
 var expect = chai.expect;
-var hash = require('../hash');
-var unhash = require('../unhash');
+var funcs = require('../index');
+var hash = funcs.hash;
+var unhash = funcs.unhash;
 
 describe('hash', function() {
   it('should return the correct value for the example message.', function() {
